@@ -23,8 +23,14 @@
 ### 1. Introduction
 This document describes the plan for testing the home page of the HillelQAuto [Hillel QAuto](https://qauto.forstudy.space/).
 
-Our website test automation project, [Hillel QAuto](https://qauto.forstudy.space/), aims to create a reliable and efficient testing process to ensure this resource's high quality and consistent performance. The website provides training material and tools for learning automated testing, and our goal is to test the performance and functionality of each of these tools.
-The main goal of our project is to provide reliable and accurate functionality testing of the https&#x3A;//qauto.forstudy.space/ website. We plan to automate the testing of various features and modules.
+Our website test automation project, [Hillel QAuto](https://qauto.forstudy.space/),
+aims to create a reliable and efficient testing process to ensure this
+resource's high quality and consistent performance.
+The website provides training material and tools for learning automated testing,
+and our goal is to test the performance and functionality of each of these tools.
+The main goal of our project is to provide reliable and accurate functionality testing
+of the [Hillel QAuto](https://qauto.forstudy.space/) website.
+We plan to automate the testing of various features and modules.
 
 -----
 <a name="intro_general" />
