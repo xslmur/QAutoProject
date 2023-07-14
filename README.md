@@ -9,13 +9,13 @@
 - 1\. [Introduction](#intro)
   - 1.1 [General Information](#intro_general)
   - 1.2 [References](#references)
-- 2\. [Preconditions](preconditions)
-- 3\. [Test Strategy](test_strategy)
-  - 3.1 [Testing objects](testing_objects)
-  - 3.2 [Description of the testing elements](description_elem)
-  - 3.3 [Functionality and key features to be tested](tested_features)
-  - 3.4 [Checklist and Test Cases for Login Pop-up](checklist) 
-- 4\. [Test Environment](environment)
+- 2\. [Preconditions](#preconditions)
+- 3\. [Test Strategy](#test_strategy)
+  - 3.1 [Testing objects](#testing_objects)
+  - 3.2 [Description of the testing elements](#description_elem)
+  - 3.3 [Functionality and key features to be tested](#tested_features)
+  - 3.4 [Checklist and Test Cases for Login Pop-up](#checklist)
+- 4\. [Test Environment](#environment)
   
 -----
 <a name="intro" />
