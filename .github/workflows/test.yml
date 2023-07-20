@@ -23,4 +23,3 @@ jobs:
           options: --quiet
           # show the summary for both successful and failed tests
           show: all
-          output: $GITHUB_STEP_SUMMARY
