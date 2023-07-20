@@ -22,3 +22,5 @@ jobs:
           paths: test_qauto.py
           # show the summary for both successful and failed tests
           show: all
+          options: -vv
+          output: test-summary.md
