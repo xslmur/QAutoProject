@@ -1,6 +1,7 @@
 name: run qauto tests
 
-on: [push]
+on:
+  workflow_dispatch:
 
 jobs:
   test:
