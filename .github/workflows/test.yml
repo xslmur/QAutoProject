@@ -23,3 +23,6 @@ jobs:
           options: --quiet
           # show the summary for both successful and failed tests
           show: all
+        env:
+          WEB_USER: ${{secrets.WEB_USER}}
+          WEB_PASS: ${{secrets.WEB_PASS}}
