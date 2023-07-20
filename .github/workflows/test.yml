@@ -23,4 +23,4 @@ jobs:
           # show the summary for both successful and failed tests
           show: all
           options: -vv
-          output: test-summary.md
+          output: $GITHUB_STEP_SUMMARY
