@@ -20,7 +20,7 @@ jobs:
         uses: dariocurr/pytest-summary@main
         with:
           paths: test_qauto.py
-          options: --quiet
+          options: -v
           # show the summary for both successful and failed tests
           show: all
         env:
