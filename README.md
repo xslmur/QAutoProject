@@ -192,8 +192,7 @@ This checklist appears to be a set of test cases or steps for testing the functi
 The checklist covers various scenarios related to the login functionality, such as verifying the display of text, closing the login pop-up, validating the email and password fields, handling error messages, and checking the behavior of the "Remember me" checkbox.<br/>
 The purpose of this checklist is to ensure that the login feature functions correctly and meets the expected requirements. By performing these tests, one can identify any issues or bugs in the login functionality and take appropriate actions to fix them before releasing the website or application to users.
 
-<details>
-<summary>Negative Login Functionality Test Cases</summary>
+#### Negative Login Functionality Test Cases
 
 |                         |                                                                                                                                |                                                                                                                   |                |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| -------------- |
@@ -208,10 +207,9 @@ The purpose of this checklist is to ensure that the login feature functions corr
 |                         | <a name="n4_2" /> [n4_2](#n4_2) Enter an incorrect password for a valid email and attempt to submit.                           | Verify that an error message appears stating "Wrong email or password."                                           | yes            |
 |                         | <a name="n4_3" /> [n4_3](#n4_3) Verify the visual representation of the password field when an error occurs.                   | Verify that the border color of the password field turns red, and labels associated with the field also turn red. | yes            |
 | Check-box "Remember me" | <a name="n5_1" /> [n5_1](#n5_1) Check the "Remember me" check-box                                                              | Verify that it retains the selection state when the login pop up is closed and reopened.                          | yes            |
-</details>
 
-<details>
- <summary>Login functionality with valid credentials</summary>
+#### Login functionality with valid credentials
+
 
 |                          |                                                                                                                                                                          |                                                                                                                    |                |
 | ------------------------ |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------------------------------------------------------------------------------------------------------------ | -------------- |
