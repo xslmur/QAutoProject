@@ -1,11 +1,10 @@
 from selenium.webdriver.common.by import By
-from .base_page_with_driver import BasePageWithDriver
+from pages.base_page_with_driver import BasePageWithDriver
 
 from controls.button import Button
 from controls.textbox import TextBox
 from controls.label import Label
 from controls.checkbox import Checkbox
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
@@ -76,4 +75,3 @@ class LoginPage(BasePageWithDriver):
 
     def get_remember_me_checkbox(self):
         return Checkbox(self._driver.find_element(*self.Locators.remember_me_checkbox))
-
