@@ -9,7 +9,8 @@
 
 - 1\. [Introduction](#intro)
   - 1.1 [General Information](#intro_general)
-  - 1.2 [References](#references)
+  - 1.2 [Testing Methods](#test_methods)
+  - 1.3 [References](#references)
 - 2\. [Preconditions](#preconditions)
 - 3\. [Test Strategy](#test_strategy)
   - 3.1 [Testing objects](#testing_objects)
@@ -41,9 +42,21 @@ We plan to automate the testing of various features and modules.
 This application was created for teaching purposes for Hillel students to improve their knowledge about software testing and development. This application is used by many students related to different areas of study (testers, developers, and so on). That's why it must be available and workable 24 hours a day, 7 days a week. It's essential for the application to be created according to the main requirements for applications of this type, but at the same time contained a number of non-primitive errors for supporting the learning process.
 
 -----
+<a name="test_methods" />
+
+### 1.2 Testing Methods: Selenium WebDriver and API for Hillel QAuto
+
+To achieve our testing objectives effectively, we have chosen to leverage two essential tools in the software testing domain: Selenium WebDriver and API testing. The integration of these two technologies enables us to conduct comprehensive testing, encompassing both the front-end and back-end aspects of the website. <br/>
+Selenium WebDriver will be employed to automate the functional testing of the website's user interface. With its capabilities to interact with the website as an end-user would, we can assess the behavior of the website across different web browsers and platforms, ensuring a consistent experience for all users. <br/>
+In addition to the front-end testing, API testing will play a pivotal role in evaluating the functionality and responses of various API endpoints utilized by the Hillel QAuto website. This backend testing approach enables us to verify the correctness and reliability of the website's interaction with its underlying services. <br/>
+Through the amalgamation of Selenium WebDriver and API testing, we aim to achieve an encompassing and robust testing process, yielding a website that not only meets but exceeds the expectations of its users. Our focus on automation will contribute to an efficient and repeatable testing process, allowing us to continually monitor and maintain the website's performance and functionality. <br/>
+By meticulously adhering to this testing plan, we are confident in delivering a top-tier user experience on the Hillel QAuto website, ensuring that it remains a reliable and valuable resource for those interested in automated testing methodologies.
+
+-----
+
 <a name="references" />
 
-### 1.2 References
+### 1.3 References
 
 |                          |                                                                                                                                                                           |
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -223,9 +236,10 @@ The purpose of this checklist is to ensure that the login feature functions corr
 
 ### 4. Test Environment
 
-|                                 |                                                                                                                                          |
-| ------------------------------- |------------------------------------------------------------------------------------------------------------------------------------------|
-| Hardware/software configuration | - Hardware configuration: Intel Core i7-8700K CPU, 31GB RAM, 232.89 SSD<br/> - Software configuration:  x86_64 GNU/Linux/Debian 6.1.15-1 |
-| Environment settings            | - Browser: Firefox Nightly 117.9a1 (64-bit) <br/> - Screen resolutions: 2560x1440                                                        |
-| Documentation tools used        | - KDE - KWrite <br/> - Web application - Google Docs                                                                                     |
-| Automation tools used           | - PyCharm 2023.1.3 (Community Edition) <br/> - Program language - Python 3.11 <br/> - Selenium web driver                                |
+|                                              |                                                                                                                                          |
+|----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| Hardware/software configuration              | - Hardware configuration: Intel Core i7-8700K CPU, 31GB RAM, 232.89 SSD<br/> - Software configuration:  x86_64 GNU/Linux/Debian 6.1.15-1 |
+| Environment settings                         | - Browser: Firefox Nightly 117.9a1 (64-bit) <br/> - Screen resolutions: 2560x1440                                                        |
+| Documentation tools used                     | - KDE - KWrite <br/> - Obsidian v1.3.5                                                                                                   |
+| Automation tools used                        | - PyCharm 2023.1.3 (Community Edition) <br/> - Program language - Python 3.11 <br/> - Selenium web driver                                |
+| Reporting and automation tools used          | - Allure 2.22.0 <br/> - GitHub Actions                                                                                                   |
