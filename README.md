@@ -12,12 +12,13 @@
   - 1.2 [Testing Methods](#test_methods)
   - 1.3 [References](#references)
 - 2\. [Preconditions](#preconditions)
-- 3\. [Test Strategy](#test_strategy)
-  - 3.1 [Testing objects](#testing_objects)
-  - 3.2 [Description of the testing elements](#description_elem)
-  - 3.3 [Functionality and key features to be tested](#tested_features)
-  - 3.4 [Checklist and Test Cases for Login Pop-up](#checklist)
-- 4\. [Test Environment](#environment)
+- 3\. [Testing Completion Criteria](#test_criteria)
+- 4\. [Test Strategy](#test_strategy)
+  - 4.1 [Testing objects](#testing_objects)
+  - 4.2 [Description of the testing elements](#description_elem)
+  - 4.3 [Functionality and key features to be tested](#tested_features)
+  - 4.4 [Checklist and Test Cases for Login Pop-up](#checklist)
+- 5\. [Test Environment](#environment)
   
 -----
 <a name="intro" />
@@ -48,9 +49,9 @@ This application was created for teaching purposes for Hillel students to improv
 
 To achieve our testing objectives effectively, we have chosen to leverage two essential tools in the software testing domain: Selenium WebDriver and API testing. The integration of these two technologies enables us to conduct comprehensive testing, encompassing both the front-end and back-end aspects of the website. <br/>
 Selenium WebDriver will be employed to automate the functional testing of the website's user interface. With its capabilities to interact with the website as an end-user would, we can assess the behavior of the website across different web browsers and platforms, ensuring a consistent experience for all users. <br/>
-In addition to the front-end testing, API testing will play a pivotal role in evaluating the functionality and responses of various API endpoints utilized by the Hillel QAuto website. This backend testing approach enables us to verify the correctness and reliability of the website's interaction with its underlying services. <br/>
+In addition to the front-end testing, API testing will play a pivotal role in evaluating the functionality and responses of various API endpoints utilized by the [Hillel QAuto](https://qauto.forstudy.space/) website. This backend testing approach enables us to verify the correctness and reliability of the website's interaction with its underlying services. <br/>
 Through the amalgamation of Selenium WebDriver and API testing, we aim to achieve an encompassing and robust testing process, yielding a website that not only meets but exceeds the expectations of its users. Our focus on automation will contribute to an efficient and repeatable testing process, allowing us to continually monitor and maintain the website's performance and functionality. <br/>
-By meticulously adhering to this testing plan, we are confident in delivering a top-tier user experience on the Hillel QAuto website, ensuring that it remains a reliable and valuable resource for those interested in automated testing methodologies.
+By meticulously adhering to this testing plan, we are confident in delivering a top-tier user experience on the [Hillel QAuto](https://qauto.forstudy.space/) website, ensuring that it remains a reliable and valuable resource for those interested in automated testing methodologies.
 
 -----
 
@@ -109,9 +110,25 @@ To effectively test the login pop-up on the website [Hillel QAuto](https://qauto
 17. Test Execution Environment: The target website [Hillel QAuto](https://qauto.forstudy.space/) must be accessible and available during the test execution, and any necessary test accounts or test data on the website should be in the expected state.<br/>
 By ensuring these preconditions are met, you can proceed with developing and executing your  test script using preferred IDE and preferred program language for testing the login pop-up on the website.
 ---
+<a name="test_criteria" />
+
+### Testing Completion Criteria
+
+1. Successful execution of all pre-defined test scenarios for login functionality: A comprehensive set of test scenarios has been developed to validate the login functionality of the [Hillel QAuto](https://qauto.forstudy.space/) website. Each test scenario should be executed, and the actual results should align with the expected outcomes. Any deviation or failure in executing the test scenarios should be addressed and rectified. <br/>
+2. Verification of test documentation availability: The [Project](https://github.com/xslmur/login_auto_testing) should include well-documented test plans, test cases, and test reports specific to the login functionality. These documents must outline the test objectives, test steps, and acceptance criteria for each test case, ensuring that the testing process is clear and transparent. <br/>
+3. Report of discovered defects: Throughout the testing process, any defects discovered in the login functionality must be meticulously tracked and documented. The severity and importance of each defect should be assessed, and their status should be updated in the defect tracking system. Upon completion of testing, a comprehensive defect report must be provided, detailing all identified issues and their current status. <br/>
+4. Successful testing execution within the planned schedule: The [Project](https://github.com/xslmur/login_auto_testing) should adhere to the established testing schedule for login functionality. Completing the tests within the specified timeframes demonstrates efficient planning and execution, ensuring that the testing phase aligns with the overall project timeline. <br/>
+5. Test coverage report for the login functionality: The testing process should ensure adequate coverage of login-related scenarios, encompassing functional, integration, and scenario-based testing. A test coverage report should be generated, showcasing the test cases executed, passed, and any areas that need further attention. This report should validate that the login functionality is thoroughly tested, leaving no critical aspects unverified. <br/>
+
+When all these testing completion criteria are met for the login functionality of the  [Project](https://github.com/xslmur/login_auto_testing), the testing phase can be considered successfully completed. The obtained results will provide a reliable assessment of the login functionality, ensuring its stability, security, and effectiveness for the further development and operation of the [Hillel QAuto](https://qauto.forstudy.space/) website.
+
+
+
+-----
+
 <a name="test_strategy" />
 
-### 3. Test strategy
+### 4. Test strategy
 * **Testing Login Pop-up:**  
 When testing a login pop-up, the primary goal is to ensure that the user authentication process functions correctly and securely. The testing process involves verifying the behavior and functionality of the login pop-up under various scenarios, ensuring that it meets the desired requirements and user expectations.
 
@@ -127,7 +144,7 @@ By following these approaches, the testing process aims to identify and resolve 
 -----
 <a name="testing_objects" />
 
-### 3.1 Testing objects
+### 4.1 Testing objects
 
 Login pop-up.
 
@@ -142,7 +159,7 @@ This modal window consists of Important elements:
 -----
 <a name="description_elem" />
 
-### 3.2  Description of the testing elements according to the Project specification
+### 4.2  Description of the testing elements according to the Project specification
 
 |                              |             |                                                                                                                                                                 |                                                                 |
 |------------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -158,7 +175,7 @@ This modal window consists of Important elements:
 ---
 <a name="tested_features" />
 
-### 3.3 Functionality and key features to be tested
+### 4.3 Functionality and key features to be tested
 The following is a detailed overview of the functionality and key features to be tested for the login pop-up:
 
 1. Text "Log in":
@@ -199,7 +216,7 @@ Login functionality with valid credentials:
 -----
 <a name="checklist" />
 
-### 3.4 Checklist and Test Cases for Login Pop-up 
+### 4.4 Checklist and Test Cases for Login Pop-up 
 
 This checklist appears to be a set of test cases or steps for testing the functionality and behavior of a login pop-up or form on a website or application. Each test case describes an action, the expected result, and whether the state (pass or no) matches the expected result.<br/>
 The checklist covers various scenarios related to the login functionality, such as verifying the display of text, closing the login pop-up, validating the email and password fields, handling error messages, and checking the behavior of the "Remember me" checkbox.<br/>
@@ -234,7 +251,7 @@ The purpose of this checklist is to ensure that the login feature functions corr
 ---
 <a name="environment" />
 
-### 4. Test Environment
+### 5. Test Environment
 
 |                                              |                                                                                                                                          |
 |----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
