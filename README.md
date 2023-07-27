@@ -5,7 +5,7 @@
 |          |             |                 |            |
 | :------: | :---------: |:---------------:|:----------:|
 | **Date** | **Version** | **Description** | **Author** |
-| 07.07.23 |     1.0     |  Stage 1. - 4.  |  Karoline  |
+| 07.07.23 |     1.0     |  Stage 1. - 5.  |  Karoline  |
 
 - 1\. [Introduction](#intro)
   - 1.1 [General Information](#intro_general)
