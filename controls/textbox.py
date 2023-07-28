@@ -1,5 +1,6 @@
 from .base_control import BaseControl
 
+
 class TextBox(BaseControl):
     def __init__(self, text_box_element):
         super().__init__(text_box_element)

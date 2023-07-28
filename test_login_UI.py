@@ -153,7 +153,7 @@ class TestLoginPopUp:
         close_button = self.login_facade.get_login_close_button()
         close_button.click()
         self.login_facade.wait_for_login_form_title_to_disappear()
-        # open login pop-up
+        # open login poField Email 	n3_1 Leave the email field empty and attempt to submip-up
         self.login_facade.click_signin_button()
         # recheck checkbox state
         assert not self.login_facade.get_remember_me_checkbox().is_selected()

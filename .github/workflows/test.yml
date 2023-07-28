@@ -19,7 +19,7 @@ jobs:
       - name: Run tests
         uses: dariocurr/pytest-summary@main
         with:
-          paths: test_qauto.py
+          paths: test_login_UI.py
           options: --quiet
           # show the summary for both successful and failed tests
           show: all
