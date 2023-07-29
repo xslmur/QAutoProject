@@ -3,10 +3,10 @@ name: allure-report
 on:
     workflow_dispatch:
     release:
-    types:
+      types:
       - created
     push:
-    branches-ignore:
+      branches-ignore:
       - '!master'
 
 jobs:
