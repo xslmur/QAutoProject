@@ -153,3 +153,6 @@ class TestCarsUI:
 
     def teardown_class(self):
         self.user_facade.delete()
+
+        # force logout
+        self.driver.delete_all_cookies()
