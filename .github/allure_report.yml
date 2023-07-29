@@ -1,0 +1,59 @@
+name: allure-report
+
+on:
+    workflow_dispatch:
+    release:
+    types:
+      - created
+    push:
+    branches-ignore:
+      - '!master'
+
+jobs:
+  allure:
+    name: Generate Allure Report
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@main
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run tests
+        uses: dariocurr/pytest-summary@main
+        with:
+          paths: .
+          options: --quiet
+          # show the summary for both successful and failed tests
+          show: all
+
+      - name: Get Allure history
+        uses: actions/checkout@main
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Allure Report action from marketplace
+        uses: simple-elf/allure-report-action@main
+        if: always()
+        #id: allure-report
+        with:
+          allure_results: allure-results
+          #gh_pages: gh-pages
+          #allure_report: allure-report
+          allure_history: allure-history
+          keep_reports: 20
+
+      - name: Deploy report to Github Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@main
+        env:
+          WEB_USER: ${{secrets.WEB_USER}}
+          WEB_PASS: ${{secrets.WEB_PASS}}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history
