@@ -21,7 +21,7 @@
 - 5\. [Test Environment](#environment)
   
 -----
-<a name="intro" />
+<a name="intro"></a>
 
 ### 1. Introduction
 This document describes the plan for testing the home page of the HillelQAuto [Hillel QAuto](https://qauto.forstudy.space/).
@@ -36,14 +36,14 @@ of the [Hillel QAuto](https://qauto.forstudy.space/) website.
 We plan to automate the testing of various features and modules.
 
 -----
-<a name="intro_general" />
+<a name="intro_general"></a>
 
 ### 1.1 General Information
 
 This application was created for teaching purposes for Hillel students to improve their knowledge about software testing and development. This application is used by many students related to different areas of study (testers, developers, and so on). That's why it must be available and workable 24 hours a day, 7 days a week. It's essential for the application to be created according to the main requirements for applications of this type, but at the same time contained a number of non-primitive errors for supporting the learning process.
 
 -----
-<a name="test_methods" />
+<a name="test_methods"></a>
 
 ### 1.2 Testing Methods: Selenium WebDriver and API for Hillel QAuto
 
@@ -55,7 +55,7 @@ By meticulously adhering to this testing plan, we are confident in delivering a 
 
 -----
 
-<a name="references" />
+<a name="references"></a>
 
 ### 1.3 References
 
@@ -69,7 +69,7 @@ By meticulously adhering to this testing plan, we are confident in delivering a 
 
 
 ---
-<a name="preconditions" />
+<a name="preconditions"></a>
 
 ### 2. Preconditions
 
@@ -110,7 +110,7 @@ To effectively test the login pop-up on the website [Hillel QAuto](https://qauto
 17. Test Execution Environment: The target website [Hillel QAuto](https://qauto.forstudy.space/) must be accessible and available during the test execution, and any necessary test accounts or test data on the website should be in the expected state.<br/>
 By ensuring these preconditions are met, you can proceed with developing and executing your  test script using preferred IDE and preferred program language for testing the login pop-up on the website.
 ---
-<a name="test_criteria" />
+<a name="test_criteria"></a>
 
 ### Testing Completion Criteria
 
@@ -126,7 +126,7 @@ When all these testing completion criteria are met for the login functionality o
 
 -----
 
-<a name="test_strategy" />
+<a name="test_strategy"></a>
 
 ### 4. Test strategy
 * **Testing Login Pop-up:**  
@@ -142,7 +142,7 @@ Verification methods in login pop-up testing involve comparing the actual behavi
 When dealing with error handling and exceptional situations in login pop-up testing, several approaches can be employed. These approaches focus on ensuring proper validation, informative error messages, and secure recovery mechanisms. Additionally, the login pop-up should handle system errors gracefully, log and report errors for troubleshooting purposes, and implement necessary security measures to protect against unauthorized access. <br/>
 By following these approaches, the testing process aims to identify and resolve potential issues, enhance user experience, and ensure the login pop-up is secure, reliable, and provides a smooth authentication process for users.
 -----
-<a name="testing_objects" />
+<a name="testing_objects"></a>
 
 ### 4.1 Testing objects
 
@@ -157,23 +157,25 @@ This modal window consists of Important elements:
 - Check-box - 'Remember me'.
 
 -----
-<a name="description_elem" />
+<a name="description_elem"></a>
 
 ### 4.2  Description of the testing elements according to the Project specification
 
-|                              |             |                                                                                                                                                                 |                                                                                                           |
-|------------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Elements                     | isMandatory | Errors                                                                                                                                                          | Description                                                                                               |
-| Text **"Log in"**            |             |                                                                                                                                                                 |                                                                                                           |
-| Button **Cross**             |             |                                                                                                                                                                 | Close pop up                                                                                              |
-| Field "**Email**"            | yes         | - Empty field - "Email is required" <br/>- Wrong data - "Email is incorrect" <br/>- No user - "Wrong email or password"  <br/>- Border color red and labels red |                                                                                                           |
-| Field "**Password**"         | yes         | - Empty field - "Password required" <br/>- No user - "Wrong email or password" <br/>- Border color red and labels red                                           |                                                                                                           |
-| Check-box "**Remember me**"  |             |                                                                                                                                                                 | Provides more time to our cookie life                                                                     |
-| Button "**Forgot password**" |             |                                                                                                                                                                 | When the user clicks on this button shows Restore access pop up                                           |
-| Button "**Registration**"    |             |                                                                                                                                                                 | When the user clicks on this button shows Registration pop up                                             |
-| Button "**Login**"           |             |                                                                                                                                                                 | Redirect to your profile <br/> The button is disabled if data incorrect                                   |
+|                              |             |                                                                                                                                                                    |                                                                         |
+|------------------------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Elements                     | isMandatory | Errors                                                                                                                                                             | Description                                                             |
+| Text **"Log in"**            |             |                                                                                                                                                                    |                                                                         |
+| Button **Cross**             |             |                                                                                                                                                                    | Close pop up                                                            |
+| Field "**Email**"            | yes         | - Empty field - "Email is required" <br/> - Wrong data - "Email is incorrect" <br/> - No user - "Wrong email or password"  <br/> - Border color red and labels red |                                                                         |
+| Field "**Password**"         | yes         | - Empty field - "Password required" <br/> - No user - "Wrong email or password" <br/> - Border color red and labels red                                            |                                                                         |
+| Check-box "**Remember me**"  |             |                                                                                                                                                                    | Provides more time to our cookie life                                   |
+| Button "**Forgot password**" |             |                                                                                                                                                                    | When the user clicks on this button shows Restore access pop up         |
+| Button "**Registration**"    |             |                                                                                                                                                                    | When the user clicks on this button shows Registration pop up           |
+| Button "**Login**"           |             |                                                                                                                                                                    | Redirect to your profile <br/> The button is disabled if data incorrect |
+
 ---
-<a name="tested_features" />
+
+<a name="tested_features"></a>
 
 ### 4.3 Functionality and key features to be tested
 The following is a detailed overview of the functionality and key features to be tested for the login pop-up:
@@ -214,7 +216,7 @@ Login functionality with valid credentials:
    - The test case involves entering valid email and password credentials and attempting to submit the login form. The expected result is to verify that the login is successful and the user is redirected to the appropriate page or dashboard. This test ensures that the login process functions as intended for users with valid credentials.
 
 -----
-<a name="checklist" />
+<a name="checklist"></a>
 
 ### 4.4 Checklist and Test Cases for Login Pop-up 
 This checklist appears to be a set of test cases or steps for testing the functionality and behavior of a login pop-up or form on a website or application. Each test case describes an action, the expected result, and whether the state (pass or no) matches the expected result.<br/>
@@ -248,7 +250,7 @@ The purpose of this checklist is to ensure that the login feature functions corr
 
 
 ---
-<a name="environment" />
+<a name="environment"></a>
 
 ### 5. Test Environment
 
