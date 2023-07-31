@@ -2,10 +2,10 @@
 
 ## ⬇️ Test plan for ‘Garage’ # 1.0
 
-|          |             |                 |            |
-| :------: | :---------: |:---------------:|:----------:|
-| **Date** | **Version** | **Description** | **Author** |
-| 07.07.23 |     1.0     |  Stage 1. - 5.  |  Karoline  |
+|          |             |                   |              |
+|----------|-------------|-------------------|--------------|
+| **Date** | **Version** | **Description**   | **Author**   |
+| 07.07.23 | 1.0         | Stage 1. - 5.     | Karoline     |
 
 - 1\. [Introduction](#intro)
   - 1.1 [General Information](#intro_general)
@@ -183,11 +183,9 @@ The following is a detailed overview of the functionality and key features to be
 1. Text "Log in":
    - This test case verifies that the login pop-up correctly displays the text "Log in." It ensures that the text is properly rendered and visible to users.
 
-
 2. Button Cross:
    - The cross button serves as a close button for the login pop-up. When clicked, it should close the pop-up without performing any actions. This test case ensures that the button functions as expected and successfully closes the pop-up.
  
-  
 3. Field Email: <br/> The email field is used for users to enter their email addresses during the login process. Several test cases can be performed to validate its functionality:
 
    - Test Case 1: Empty field - This test case verifies that an error message appears stating "Email required" when the email field is left empty. It ensures that the system prompts the user to enter their email address.
@@ -198,7 +196,6 @@ The following is a detailed overview of the functionality and key features to be
 
    - Test Case 4: Border color and labels - This test case focuses on the visual representation of the email field when an error occurs. It ensures that the border color of the email field turns red and the associated labels also turn red, providing clear visual feedback to the user.
    
-
 4. Field Password:
    - The password field is where users enter their passwords during the login process. The following test cases can be conducted to validate its functionality:
 
@@ -207,7 +204,6 @@ The following is a detailed overview of the functionality and key features to be
    - Test Case 2: No user - When an incorrect password is entered for a valid email, the system should display an error message stating "Wrong email or password." This test case ensures that the system correctly identifies invalid passwords.
 
    - Test Case 3: Border color and labels - Similar to the email field, this test case focuses on the visual representation of the password field when an error occurs. It ensures that the border color of the password field turns red and the associated labels also turn red, providing clear visual feedback to the user.
-
 
 5. Check box "Remember me":
    - The "Remember me" checkbox allows users to choose whether their login session should be remembered for future visits. This test case ensures that the checkbox retains its selection state when the login pop-up is closed and reopened. It validates that the system correctly stores and retrieves the user's preference.
@@ -251,6 +247,7 @@ The purpose of this checklist is to ensure that the login feature functions corr
 
 ---
 <a name="environment"></a>
+
 
 ### 5. Test Environment
 
