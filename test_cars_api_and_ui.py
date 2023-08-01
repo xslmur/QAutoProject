@@ -88,7 +88,7 @@ class TestCarsUI:
         # verify created car data
         assert car.data == car_data
 
-    @allure.description("modify Car via UI and then verify it updated via API")
+    @allure.description("Modify Car via UI and then verify it updated via API")
     @allure.issue("https://qauto2.forstudy.space/garage/", "Test issue: WEB UI Car modification issues")
     def test_auto_modify(self):
         # create car by API
@@ -123,7 +123,7 @@ class TestCarsUI:
         # print(car_data.__dict__)
         assert car.data == car_data
 
-    @allure.description("create car via APi. delete car via WEB UI and check it removed via API")
+    @allure.description("Create car via APi. delete car via WEB UI and check it removed via API")
     @allure.issue("https://qauto2.forstudy.space/garage/", "Test issue: WEB UI Car deletion issues")
     def test_auto_delete(self):
         # create car by API
