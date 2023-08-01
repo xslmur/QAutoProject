@@ -46,21 +46,6 @@ jobs:
           allure_history: allure-history
           keep_reports: 5
 
-      - name: Get Allure Report URL
-        run: echo "ALLURE_URL=https://xslmur.github.io/login_auto_testing/${{ github.run_number }}/" >> $GITHUB_ENV
-
-      - name: Update README with Allure Report URL
-        run: |
-          sed -i "s#<!-- ALLURE_REPORT -->#Check out the latest [Allure Report]($ALLURE_URL)#" README.md
-
-      - name: Commit README.md changes
-        run: |
-          git config --local user.email "xslmr@proton.me"
-          git config --local user.name "xslmr"
-          git add README.md
-          git commit -m "Update Allure Report URL"
-          git push
-
       - name: Deploy report to Github Pages
         if: always()
         #if: github.ref == 'refs/heads/main'
