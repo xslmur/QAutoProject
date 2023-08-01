@@ -1,6 +1,6 @@
 [![run qauto tests](https://github.com/xslmur/login_auto_testing/actions/workflows/test.yml/badge.svg)](https://github.com/xslmur/login_auto_testing/actions/workflows/test.yml)
 
-<!-- ALLURE_REPORT -->
+[Allure Report](https://xslmur.github.io/login_auto_testing/)
 
 
 ## ⬇️ Test plan for ‘Garage’ # 1.0
