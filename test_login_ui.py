@@ -10,7 +10,7 @@ from facades.garage_facade import GarageFacade
 WEB_UI_URL = 'https://guest:welcome2qauto@qauto2.forstudy.space/'
 
 WEB_USER = os.getenv('WEB_USER', 'test@example.com')
-WEB_PASS = os.getenv('WEB_PASS', 'testpass')
+WEB_PASS = os.getenv('WEB_PASS', 'tesstpass')
 
 GITHUB_REPO_LINK = "https://github.com/xslmur/login_auto_testing"
 
