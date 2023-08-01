@@ -1,7 +1,7 @@
 ## 👉 <a href="https://xslmur.github.io/login_auto_testing/"><img src="https://img.shields.io/badge/Click here to view the Allure report-2962FF?style=for-the-badge&logo=hashnode&logoColor=white" /></a>
 
 
----
+
 ## ⬇️ Test plan for ‘Garage’ # 1.0
 
 |          |             |                   |              |
@@ -20,8 +20,10 @@
   - 4.2 [Description of the testing elements](#description_elem)
   - 4.3 [Functionality and key features to be tested](#tested_features)
   - 4.4 [Checklist and Test Cases for Login Pop-up](#checklist)
-- 5\. [Test Environment](#environment)
-- 6\. [Checklist for Api Login Testing](checklist_api)
+- 5\. <a href="#checklist-for-api-login-testing-1">Раздел 1</a>
+- 7\. [Test Environment](#environment)
+
+
   
 -----
 <a name="intro"></a>
@@ -255,7 +257,9 @@ The purpose of this checklist is to ensure that the login feature functions corr
 
 
 <details>
-<summary> <a name="checklist_api"> 5. Checklist for Api Login Testing</a> </summary>
+    <summary> 
+        <a name="checklist_api"> 5. Checklist for Api Login Testing</a> 
+</summary>
 
 **TestRegister**
 1. **User Registration Success**
@@ -367,6 +371,7 @@ The purpose of this checklist is to ensure that the login feature functions corr
    - **Test Name**: `test_auto_delete`
    - **Description**: This test verifies the creation of a car through the API, its deletion through the WEB UI, and checks that it's removed through the API.
    - **Result**: [PASSED]
+
 </details>
 
 ### 7. Test Environment
