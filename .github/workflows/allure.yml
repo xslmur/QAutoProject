@@ -53,6 +53,10 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-history
+
+      - name: Get Allure Report URL
+        run: echo "ALLURE_URL=https://xslmur.github.io/login_auto_testing/${{ github.run_number }}/" >> $GITHUB_ENV
+
 #        env:
 #          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 #          PUBLISH_BRANCH: gh-pages
