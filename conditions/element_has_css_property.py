@@ -9,6 +9,7 @@ class ElementHasCssProperty(object):
 
     locator - used to find the element
     returns the WebElement once it has the particular css property with specified value
+    currently unused
     """
     def __init__(self, locator, css_property: str, value: str):
         self.locator = locator
