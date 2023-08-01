@@ -1,6 +1,3 @@
-import requests
-
-
 class Models:
     def __init__(self, api_base, session):
         self.models = session.get(api_base + 'cars/models').json()['data']
