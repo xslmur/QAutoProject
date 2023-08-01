@@ -126,12 +126,13 @@ class TestRegister:
         'test', 't1T', 't' * 20, 't' * 10])
     def test_user_register_wrong_password(self, pwd):
         if pwd == 't' * 10:
-            allure.dynamic.description("Run: "
-                                       "<FAILED test_api_login.py:"
+            allure.dynamic.description("Run: \n\n"
+                                       "< FAILED test_api_login.py:"
                                        "TestRegister::test_user_register_wrong_password[tttttttttt] - "
                                        "AssertionError: assert 'Passwords do not match' == "
-                                       "'Password has... small letter'>"
-                                       "Note: Is expected to be failed coz API has bug in the password field validator")
+                                       "'Password has... small letter' > \n\n"
+                                       "Note: \n\n"
+                                       "Is expected to be failed coz API has bug in the password field validator")
 
         malformed_user = deepcopy(self.user)
         malformed_user.user_register.password = pwd
