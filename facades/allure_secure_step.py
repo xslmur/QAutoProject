@@ -1,5 +1,5 @@
 # implements allure_secure_step to hide step parameters in the report
-# see: allure_commons/_allure.py
+# see: . env/lib/python3.11/allure_commons/_allure.py
 
 from functools import wraps
 from typing import Any, Callable, TypeVar
