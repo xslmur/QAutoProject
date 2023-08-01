@@ -1,4 +1,4 @@
-## 👉 <a href="https://xslmur.github.io/login_auto_testing/"><img src="https://img.shields.io/badge/Click here to view the Allure report-2962FF?style=for-the-badge&logo=hashnode&logoColor=white" /></a>
+## 👉 <a href="https://xslmur.github.io/QAutoProject/"><img src="https://img.shields.io/badge/Click here to view the Allure report-2962FF?style=for-the-badge&logo=hashnode&logoColor=white" /></a>
 
 
 
