@@ -75,5 +75,3 @@ class LoginPage(BasePageWithDriver):
 
     def get_remember_me_checkbox(self):
         return Checkbox(self._driver.find_element(*self.Locators.remember_me_checkbox))
-
-
