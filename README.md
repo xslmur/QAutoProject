@@ -20,7 +20,8 @@
   - 4.2 [Description of the testing elements](#description_elem)
   - 4.3 [Functionality and key features to be tested](#tested_features)
   - 4.4 [Checklist and Test Cases for Login Pop-up](#checklist)
-- 5\. <a href="#checklist-for-api-login-testing-1">Раздел 1</a>
+- 5\. [Checklist for Api Login Testing](#api_checklist)
+- 6\. [Checklist for testing cars in Garage Page via Api and Web UI](#ui_api_checklist)
 - 7\. [Test Environment](#environment)
 
 
@@ -254,12 +255,12 @@ The purpose of this checklist is to ensure that the login feature functions corr
 <a name="environment"></a>
 
 ---
+<a name="api_checklist"></a>
 
-
+### Checklist for Api Login Testing 
 <details>
-    <summary> 
-        <a name="checklist_api"> 5. Checklist for Api Login Testing</a> 
-</summary>
+    <summary>🔗</summary> 
+
 
 **TestRegister**
 1. **User Registration Success**
@@ -352,8 +353,12 @@ The purpose of this checklist is to ensure that the login feature functions corr
 
 </details>
 
+---
+<a name="ui_api_checklist"></a>
+
+### Checklist for testing cars in Garage Page via Api and Web UI
 <details>
-  <summary>6. Checklist for testing cars in Garage Page via Api and Web UI</summary> 
+    <summary>🔗</summary>  
 
 **Test Class: TestCarsUI**
 
