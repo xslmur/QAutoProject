@@ -126,7 +126,7 @@ class TestRegister:
         'test', 't1T', 't' * 20, 't' * 10])
     def test_user_register_wrong_password(self, pwd):
         if pwd == 't' * 10:
-            allure.dynamic.description("Run: FAILED test_api_login.py::"
+            allure.dynamic.description("Run: FAILED test_api_login.py:"
                                        "TestRegister::test_user_register_wrong_password[tttttttttt] - "
                                        "AssertionError: assert 'Passwords do not match' == "
                                        "'Password has... small letter'"
