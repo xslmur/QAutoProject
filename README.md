@@ -4,10 +4,10 @@
 
 ## ⬇️ Test plan for ‘Garage’ # 1.0
 
-|          |             |                   |              |
-|----------|-------------|-------------------|--------------|
-| **Date** | **Version** | **Description**   | **Author**   |
-| 07.07.23 | 1.0         | Stage 1. - 5.     | Karoline     |
+|          |             |                 |              |
+|----------|-------------|-----------------|--------------|
+| **Date** | **Version** | **Description** | **Author**   |
+| 07.07.23 | 1.0         | Stage 1. - 7.   | Karoline     |
 
 - 1\. [Introduction](#intro)
   - 1.1 [General Information](#intro_general)
