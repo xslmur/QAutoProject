@@ -1,8 +1,7 @@
-[![run qauto tests](https://github.com/xslmur/login_auto_testing/actions/workflows/test.yml/badge.svg)](https://github.com/xslmur/login_auto_testing/actions/workflows/test.yml)
-
-[Allure Report](https://xslmur.github.io/login_auto_testing/)
+## 👉 <a href="https://xslmur.github.io/login_auto_testing/"><img src="https://img.shields.io/badge/Click here to view the Allure report-2962FF?style=for-the-badge&logo=hashnode&logoColor=white" /></a>
 
 
+---
 ## ⬇️ Test plan for ‘Garage’ # 1.0
 
 |          |             |                   |              |
@@ -22,6 +21,7 @@
   - 4.3 [Functionality and key features to be tested](#tested_features)
   - 4.4 [Checklist and Test Cases for Login Pop-up](#checklist)
 - 5\. [Test Environment](#environment)
+- 6\. [Checklist for Api Login Testing](checklist_api)
   
 -----
 <a name="intro"></a>
@@ -227,16 +227,16 @@ The purpose of this checklist is to ensure that the login feature functions corr
 |                         |                                                                                                                                |                                                                                                                                                                                 |                |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
 | Elements                | Action                                                                                                                         | Expected Result                                                                                                                                                                 | State(pass/no) |
-| Text "Log in"           | <a name="n1_1" /> [n1_1](#n1_1) Compare the retrieved text value with the expected text "Log in" to ensure it matches exactly. | The retrieved text value "Log in" matches the expected text "Log in" exactly, indicating that the text is displayed correctly.                                                  | yes            |
-| Button Cross            | <a name="n2_1" /> [n2_1](#n2_1) Click on the cross button and ensure that the login pop up is closed.                          | Closing the Log in window.                                                                                                                                                      | yes            |
-| Field Email             | <a name="n3_1" /> [n3_1](#n3_1) Leave the email field empty and attempt to submit.                                             | Verify that an error message appears stating "Email required."                                                                                                                  | yes            |
-|                         | <a name="n3_2" /> [n3_2](#n3_2) Enter an invalid email format (without '@' symbol) and attempt to submit.                      | Verify that an error message appears stating "Email is incorrect."                                                                                                              | yes            |
-|                         | <a name="n3_3" /> [n3_3](#n3_3) Enter an email that is not registered with the site and attempt to submit.                     | Verify that an error message appears stating "Wrong email or password."                                                                                                         | yes            |
-|                         | <a name="n3_4" /> [n3_4](#n3_4) Verify the visual representation of the email field when an error occurs.                      | Verify that the border color of the email field turns red, and labels associated with the field also turn red.                                                                  | yes            |
-| Field Password          | <a name="n4_1" /> [n4_1](#n4_1) Leave the password field empty and attempt to submit.                                          | Verify that an error message appears stating "Password required."                                                                                                               | yes            |
-|                         | <a name="n4_2" /> [n4_2](#n4_2) Enter an incorrect password for a valid email and attempt to submit.                           | Verify that an error message appears stating "Wrong email or password."                                                                                                         | yes            |
-|                         | <a name="n4_3" /> [n4_3](#n4_3) Verify the visual representation of the password field when an error occurs.                   | Verify that the border color of the password field turns red, and labels associated with the field also turn red.                                                               | yes            |
-| Check-box "Remember me" | <a name="n5_1" /> [n5_1](#n5_1) Check the "Remember me" check-box                                                              | Verify that it retains the selection state when the login pop up is closed and reopened.                                                                                        | yes            |
+| Text "Log in"           | <a name="n1_1" /> [n1_1](#n1_1) Compare the retrieved text value with the expected text "Log in" to ensure it matches exactly. | The retrieved text value "Log in" matches the expected text "Log in" exactly, indicating that the text is displayed correctly.                                                  | [PASSED]       |
+| Button Cross            | <a name="n2_1" /> [n2_1](#n2_1) Click on the cross button and ensure that the login pop up is closed.                          | Closing the Log in window.                                                                                                                                                      | [PASSED]       |
+| Field Email             | <a name="n3_1" /> [n3_1](#n3_1) Leave the email field empty and attempt to submit.                                             | Verify that an error message appears stating "Email required."                                                                                                                  | [PASSED]       |
+|                         | <a name="n3_2" /> [n3_2](#n3_2) Enter an invalid email format (without '@' symbol) and attempt to submit.                      | Verify that an error message appears stating "Email is incorrect."                                                                                                              | [PASSED]       |
+|                         | <a name="n3_3" /> [n3_3](#n3_3) Enter an email that is not registered with the site and attempt to submit.                     | Verify that an error message appears stating "Wrong email or password."                                                                                                         | [PASSED]       |
+|                         | <a name="n3_4" /> [n3_4](#n3_4) Verify the visual representation of the email field when an error occurs.                      | Verify that the border color of the email field turns red, and labels associated with the field also turn red.                                                                  | [PASSED]       |
+| Field Password          | <a name="n4_1" /> [n4_1](#n4_1) Leave the password field empty and attempt to submit.                                          | Verify that an error message appears stating "Password required."                                                                                                               | [PASSED]       |
+|                         | <a name="n4_2" /> [n4_2](#n4_2) Enter an incorrect password for a valid email and attempt to submit.                           | Verify that an error message appears stating "Wrong email or password."                                                                                                         | [PASSED]       |
+|                         | <a name="n4_3" /> [n4_3](#n4_3) Verify the visual representation of the password field when an error occurs.                   | Verify that the border color of the password field turns red, and labels associated with the field also turn red.                                                               | [PASSED]       |
+| Check-box "Remember me" | <a name="n5_1" /> [n5_1](#n5_1) Check the "Remember me" check-box                                                              | Verify that it retains the selection state when the login pop up is closed and reopened.                                                                                        | [PASSED]       |
 
 #### Login functionality with valid credentials
 
@@ -244,15 +244,132 @@ The purpose of this checklist is to ensure that the login feature functions corr
 |                          |                                                                                                                                                                          |                                                                                                                    |                |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|----------------|
 | Elements                 | Action                                                                                                                                                                   | Expected Result                                                                                                    | State(pass/no) |
-| Valid Email and Password | <a name="p5_1" /> [p1_1](#p5_1) Enter a valid email and password combination and attempt to submit.                                                                      | Verify that the login is successful and the user is redirected to the appropriate page or dashboard.               | yes            |
-| Case Sensitivity         | <a name="p5_2" /> [p1_2](#p5_2) Enter the email and password combination with different case sensitivity (e.g., uppercase, lowercase, mixed case) and attempt to submit. | Verify that the login is case-insensitive and the user is able to log in successfully regardless of the case used. | yes            |
+| Valid Email and Password | <a name="p5_1" /> [p1_1](#p5_1) Enter a valid email and password combination and attempt to submit.                                                                      | Verify that the login is successful and the user is redirected to the appropriate page or dashboard.               | [PASSED]       |
+| Case Sensitivity         | <a name="p5_2" /> [p1_2](#p5_2) Enter the email and password combination with different case sensitivity (e.g., uppercase, lowercase, mixed case) and attempt to submit. | Verify that the login is case-insensitive and the user is able to log in successfully regardless of the case used. | [PASSED]       |
 
 
 ---
 <a name="environment"></a>
 
+---
 
-### 5. Test Environment
+
+<details>
+<summary> <a name="checklist_api"> 5. Checklist for Api Login Testing</a> </summary>
+
+**TestRegister**
+1. **User Registration Success**
+   - **Test Name:** `test_user_register`
+   - **Description:** Checks if a user can be registered successfully.
+   - **Result:** [PASSED]
+2. **User Registration with Empty Fields**
+   - **Name Field**
+      - **Test Name:** `test_user_register_empty_fields[name]`
+      - **Description:** Validates that registration fails when the name field is empty.
+      - **Result:** [PASSED]
+   - **Last Name Field**
+      - **Test Name:** `test_user_register_empty_fields[lastName]`
+      - **Description:** Validates that registration fails when the last name field is empty.
+      - **Result:** [PASSED]
+   - **Email Field**
+      - **Test Name:** `test_user_register_empty_fields[email]`
+      - **Description:** Validates that registration fails when the email field is empty.
+      - **Result:** [PASSED]
+   - **Password Field**
+      - **Test Name:** `test_user_register_empty_fields[password]`
+      - **Description:** Validates that registration fails when the password field is empty.
+      - **Result:** [PASSED]
+   - **Repeat Password Field**
+      - **Test Name:** `test_user_register_empty_fields[repeatPassword]`
+      - **Description:** Validates that registration fails when the repeatPassword field is empty.
+      - **Result:** [PASSED]
+
+3. **User Registration with Incorrect Formats**
+   - **Wrong Name Format**
+      - **Test Name:** `test_user_register_wrong_name`
+      - **Description:** Validates that registration fails when an incorrect name format is used.
+      - **Result:** [PASSED]
+   - **Wrong Last Name Format**
+      - **Test Name:** `test_user_register_wrong_lastname`
+      - **Description:** Validates that registration fails when an incorrect last name format is used.
+      - **Result:** [PASSED]
+
+4. **User Registration with Incorrect Password Formats**
+   - **Short Password**
+      - **Test Name:** `test_user_register_wrong_password[test]`
+      - **Description:** Tests registration with a short password of 'test'.
+      - **Result:** [PASSED]
+   - **Invalid Characters in Password**
+      - **Test Name:** `test_user_register_wrong_password[t1T]`
+      - **Description:** Tests registration with an invalid password of 't1T'.
+      - **Result:** [PASSED]
+   - **Long Password**
+      - **Test Name:** `test_user_register_wrong_password[tttttttttttttttttttt]`
+      - **Description:** Tests registration with a long password of 20 't's.
+      - **Result:** [PASSED]
+   - **Medium-Length Invalid Password**
+      - **Test Name:** `test_user_register_wrong_password[tttttttttt]`
+      - **Description:** Tests registration with a password of 10 't's.
+      - **Result:** [FAILED]
+     
+     **Run**:
+      ```
+     ========================================================================= short test summary info =========================================================================
+     FAILED test_api_login.py::TestRegister::test_user_register_wrong_password[tttttttttt] - AssertionError: assert 'Passwords do not match' == 'Password has... small letter'
+     ==================================================================== 1 failed, 31 deselected in 0.86s =====================================================================
+     ``` 
+     **Note**:
+     ```
+     Is expected to be failed coz API has bug in the password field validator
+     ```
+    
+5. **User Registration with Non-Matching Passwords**
+   - **Test Name:** `test_user_register_passwords_do_not_match`
+   - **Description:** Validates that registration fails when the password and repeatPassword fields do not match.
+   - **Result:** [PASSED]
+
+**TestAuth**
+6. **User Login Success**
+   - **Test Name:** `test_user_login`
+   - **Description:** Validates that a user can log in successfully.
+   - **Result:** [PASSED]
+7. **User Login with Wrong Email**
+   - **Test Name:** `test_user_login_wrong_email`
+   - **Description:** Validates that login fails with an incorrect email address.
+   - **Result:** [PASSED]
+8. **User Login with Wrong Password**
+   - **Test Name:** `test_user_login_wrong_password`
+   - **Description:** Validates that login fails with an incorrect password.
+   - **Result:** [PASSED]
+9. **Check User Profile Information**
+   - **Test Name:** `test_check_user_profile`
+   - **Description:** Validates that the user profile data is retrieved correctly.
+   - **Result:** [PASSED]
+
+</details>
+
+<details>
+  <summary>6. Checklist for testing cars in Garage Page via Api and Web UI</summary> 
+
+**Test Class: TestCarsUI**
+
+1. **Create Car via WEB UI and Check Values via API**
+   - **Test Name**: `test_auto_create`
+   - **Description**: This test verifies the creation of a car through the WEB UI and checks the values through the API.
+   - **Result:** [PASSED]
+
+2. **Modify Car via UI and Verify It Updated via API**
+   - **Test Name**: `test_auto_modify`
+   - **Description**: This test verifies the modification of a car through the WEB UI and checks that it's updated correctly through the API.
+   - **Result**: [PASSED]
+
+3. **Create Car via API, Delete Car via WEB UI, and Check Removal via API**
+   - **Test Name**: `test_auto_delete`
+   - **Description**: This test verifies the creation of a car through the API, its deletion through the WEB UI, and checks that it's removed through the API.
+   - **Result**: [PASSED]
+</details>
+
+### 7. Test Environment
 
 |                                              |                                                                                                                                          |
 |----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
