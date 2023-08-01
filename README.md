@@ -254,10 +254,11 @@ The purpose of this checklist is to ensure that the login feature functions corr
 ---
 <a name="environment"></a>
 
----
+
 <a name="api_checklist"></a>
 
 ### 5. Checklist for Api Login Testing 
+
 <details>
     <summary> 🔗 </summary> 
 
@@ -353,10 +354,11 @@ The purpose of this checklist is to ensure that the login feature functions corr
 
 </details>
 
----
+
 <a name="ui_api_checklist"></a>
 
 ### 6. Checklist for testing cars in Garage Page via Api and Web UI
+
 <details>
     <summary> 🔗 </summary>  
 
