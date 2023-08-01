@@ -259,7 +259,7 @@ The purpose of this checklist is to ensure that the login feature functions corr
 
 ### 5. Checklist for Api Login Testing 
 <details>
-    <summary>🔗</summary> 
+    <summary> 🔗 </summary> 
 
 
 **TestRegister**
@@ -358,7 +358,7 @@ The purpose of this checklist is to ensure that the login feature functions corr
 
 ### 6. Checklist for testing cars in Garage Page via Api and Web UI
 <details>
-    <summary>🔗</summary>  
+    <summary> 🔗 </summary>  
 
 **Test Class: TestCarsUI**
 
