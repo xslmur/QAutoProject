@@ -76,6 +76,8 @@ class TestRegister:
         user_to_login = UserLoginData("test@tesster.com", "Qwerty12345", False)
         self.user = User(self.session, 'TestName', 'TestLastName', user_to_login)
 
+    @allure.title("Check valid user registration")
+    @allure.description("Verifying, that a user can be successfully registered with valid data.")
     def test_user_register(self):
         result = self.user.register()
         self.user.delete()
@@ -85,6 +87,22 @@ class TestRegister:
     @pytest.mark.parametrize('field_name', [
         'name', 'lastName', 'email', 'password', 'repeatPassword'])
     def test_user_register_empty_fields(self, field_name):
+        if field_name == 'name':
+            allure.dynamic.title("Check User Registration with Empty Name Field")
+            allure.dynamic.description("Verifying, that registration fails when the name field is empty.")
+        elif field_name == 'lastName':
+            allure.dynamic.title("Check User Registration with Empty Last Name Field")
+            allure.dynamic.description("Verifying, that registration fails when the last name field is empty.")
+        elif field_name == 'email':
+            allure.dynamic.title("Check User Registration with Empty Email Field")
+            allure.dynamic.description("Verifying, that registration fails when the email field is empty.")
+        elif field_name == 'password':
+            allure.dynamic.title("Check User Registration with Empty Password Field")
+            allure.dynamic.description("Verifying, that registration fails when the password field is empty.")
+        elif field_name == 'repeatPassword':
+            allure.dynamic.title("Check User Registration with Empty Repeat Password Field")
+            allure.dynamic.description("Verifying, that registration fails when the repeatPassword field is empty.")
+
         # deepcopy to avoid self.user modifications
         malformed_user = deepcopy(self.user)
 
@@ -100,6 +118,8 @@ class TestRegister:
         assert result['status'] == 'error'
         assert result['message'] == f'"{field_name}" is not allowed to be empty'
 
+    @allure.title("Check incorrect name format registration failure")
+    @allure.description("Verifying, that registration fails when using an incorrect format for the name field.")
     def test_user_register_wrong_name(self):
         malformed_user = deepcopy(self.user)
         malformed_user.user_register.name = 'wrong_name'
@@ -111,6 +131,8 @@ class TestRegister:
         assert result['status'] == 'error'
         assert result['message'] == 'Name is invalid'
 
+    @allure.title("Check incorrect last name format registration failure")
+    @allure.description("Verifying, that registration fails when using an incorrect format for the last name field.")
     def test_user_register_wrong_lastname(self):
         malformed_user = deepcopy(self.user)
         malformed_user.user_register.lastName = 'wrong_last_name'
@@ -125,7 +147,22 @@ class TestRegister:
     @pytest.mark.parametrize('pwd', [
         'test', 't1T', 't' * 20, 't' * 10])
     def test_user_register_wrong_password(self, pwd):
-        if pwd == 't' * 10:
+        if pwd == 'test':
+            allure.dynamic.title("Check User Registration with Short Password")
+            allure.dynamic.description("Verifying that the system correctly handles user registration "
+                                       "with a short password of 'test'.")
+        elif pwd == 't1T':
+            allure.dynamic.title("Check User Registration with Invalid Characters in Password")
+            allure.dynamic.description("Verifying that the system correctly handles user registration with an invalid "
+                                       "password containing 't1T'.")
+        elif pwd == 't' * 20:
+            allure.dynamic.title("Check User Registration with Long Password")
+            allure.dynamic.description("Verifying that the system correctly handles user registration"
+                                       " with a long password of 20 't's.")
+        elif pwd == 't' * 10:
+            allure.dynamic.title("Check User Registration with Medium-Length Invalid Password")
+            allure.dynamic.description("Verifying that the system correctly handles user registration"
+                                       " with a medium-length password of 10 't's.")
             allure.dynamic.description("Run: \n\n"
                                        "< FAILED test_api_login.py:"
                                        "TestRegister::test_user_register_wrong_password[tttttttttt] - "
@@ -145,6 +182,8 @@ class TestRegister:
         assert result['message'] == ('Password has to be from 8 to 15 characters long '
                                      'and contain at least one integer, one capital, and one small letter')
 
+    @allure.title("Check non-matching passwords registration failure")
+    @allure.description("Verifying, that registration fails when the password and repeatPassword fields do not match.")
     def test_user_register_passwords_do_not_match(self):
         malformed_user = deepcopy(self.user)
         malformed_user.user_register.repeatPassword = 'test'
@@ -176,11 +215,15 @@ class TestAuth:
         # save for profile tests
         self.user_id = result['data']['userId']
 
+    @allure.title("Check valid user login")
+    @allure.description("Verifying, that a user can log in successfully with valid credentials.")
     def test_user_login(self):
         self.user.logout()
         result = self.user.login()
         assert result["status"] == "ok"
 
+    @allure.title("Check incorrect email login failure")
+    @allure.description("Verifying, that login fails when using an incorrect email address.")
     def test_user_login_wrong_email(self):
         malformed_user = deepcopy(self.user)
         malformed_user.user_login.email = 'wrong_user@domain.invalid'
@@ -189,6 +232,8 @@ class TestAuth:
         assert result["status"] == "error"
         assert result["message"] == "Wrong email or password"
 
+    @allure.title("Check incorrect password login failure")
+    @allure.description("Verifying, that login fails when using an incorrect password.")
     def test_user_login_wrong_password(self):
         malformed_user = deepcopy(self.user)
         malformed_user.user_login.password = 'wrong_pass'
@@ -197,6 +242,8 @@ class TestAuth:
         assert result["status"] == "error"
         assert result["message"] == "Wrong email or password"
 
+    @allure.title("Check user profile retrieval")
+    @allure.description("Verifying the retrieval of user profile information.")
     def test_check_user_profile(self):
         result = self.user.get_profile()
 
