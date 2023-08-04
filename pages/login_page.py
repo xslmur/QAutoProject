@@ -47,7 +47,7 @@ class LoginPage(BasePageWithDriver):
         return Button(self.wait.until(EC.presence_of_element_located(self.Locators.login_close_button)))
 
     def get_login_form_title(self):
-        return Label(self.wait.until(EC.presence_of_element_located(self.Locators.login_form_title)))
+        return Label(self.wait.until(EC.visibility_of_element_located(self.Locators.login_form_title)))
 
     def wait_for_login_form_title_to_disappear(self):
         return self.wait.until(EC.invisibility_of_element_located(self.Locators.login_form_title))
