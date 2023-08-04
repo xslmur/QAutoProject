@@ -8,6 +8,8 @@ class CarModelsFacade(Models):
         super().__init__(*args, **kwargs)
 
     @allure.step("resolve car model name by id")
-    def get_brand_by_id(self, brand_id):
-        return super().get_brand_by_id(brand_id)
+    def get_model_by_id(self, brand_id, model_id):
+        return super().get_model_by_id(brand_id, model_id)
+
+
     
