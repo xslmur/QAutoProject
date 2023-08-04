@@ -141,7 +141,7 @@ class TestCarsUI:
         self.garage_facade.click_form_remove_car_button()
         self.garage_facade.click_form_remove_car_confirm_button()
 
-        time.sleep(0.5)
+        time.sleep(1.5)
 
         # verify it was removed using API
         cars = self.cars_facade.get()
