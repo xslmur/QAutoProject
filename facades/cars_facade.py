@@ -6,7 +6,7 @@ class CarsFacade(Cars):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-    @allure.step("Retreive cars via API")
+    @allure.step("Retrieve cars via API")
     def get(self) -> list[Car]:
         return super().get()
 
@@ -20,4 +20,4 @@ class CarsFacade(Cars):
 
     @allure.step("Delete ALL cars via API")
     def delete_all_cars(self):
-        return super().delete_cars()
+        return super().delete_all_cars()
