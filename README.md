@@ -30,7 +30,7 @@
 <a name="intro"></a>
 
 ### 1. Introduction
-This document describes the plan for testing the home page of the HillelQAuto [Hillel QAuto](https://qauto.forstudy.space/).
+This document describes the plan for testing the home page of the [Hillel QAuto](https://qauto.forstudy.space/).
 
 Our website test automation project, [Hillel QAuto](https://qauto.forstudy.space/),
 aims to create a reliable and efficient testing process to ensure this
